@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4731d3;
+  --color-secondary: #ea2678;
+  --color-dark: #1a1a1a;
+  --color-success: #00ab6b;
+}
+
+body {
+  @apply text-[#6B7280] dark:text-gray-100 bg-white dark:bg-[#252128] transition-colors duration-300 font-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-[#1F2937] dark:text-[#AEBCCF] font-bold;
+}
