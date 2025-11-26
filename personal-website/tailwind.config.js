@@ -4,9 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#4c359e", // Dark blue/purple from design
-        secondary: "#e92577", // Pink/Red from design
-        dark: "#1a1a1a", // Dark mode bg
+        primary: "#4731d3",
+        secondary: "#ea2678",
+        success: "#00ab6b",
+        dark: "#1a1a1a",
+        slate: {
+          700: "#5f6b7b",
+        },
       },
     },
   },

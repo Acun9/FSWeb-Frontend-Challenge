@@ -14,63 +14,51 @@ const Projects = () => {
   };
 
   return (
-    <section
-      id="projects"
-      className="py-16 bg-[#CBF281] bg-opacity-20 dark:bg-[#252128]"
-    >
-      <div className="container mx-auto px-8">
-        <h2 className="text-4xl font-bold text-[#1F2937] dark:text-[#AEBCCF] mb-12">
-          {content.projects.title}
-        </h2>
+    <section id="projects" className="py-24">
+      <div className="section-wrapper space-y-10">
+        <div>
+          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937]">
+            {content.projects.title}
+          </h2>
+          <div className="mt-4 h-px w-full bg-[#BAB2E7]"></div>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-[120px]">
           {content.projects.items.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-[#2D3235] rounded-xl overflow-hidden shadow-lg flex flex-col"
-            >
-              <div className="h-48 overflow-hidden">
+            <div key={index} className="max-w-[300px] space-y-4">
+              <div className="h-[180px] w-full overflow-hidden rounded-lg">
                 <img
                   src={projectImages[project.image]}
                   alt={project.title}
-                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                  className="h-full w-full object-cover"
                 />
               </div>
 
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold text-[#4731D3] dark:text-[#CFCBFF] mb-4">
-                  {project.title}
-                </h3>
+              <h3 className="text-[30px] font-medium leading-7 text-[#4338CA]">
+                {project.title}
+              </h3>
+              <p className="text-sm leading-tight text-[#6B7280]">
+                {project.description}
+              </p>
 
-                <p className="text-[#6B7280] dark:text-gray-300 mb-6 flex-grow text-sm leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {project.tags.map((tag, tagIndex) => (
-                    <span
-                      key={tagIndex}
-                      className="px-4 py-1 bg-white border border-[#4731D3] dark:bg-[#383838] dark:border-transparent text-[#4731D3] dark:text-[#8F88FF] rounded-full text-sm font-bold"
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-
-                <div className="flex justify-between items-center mt-auto">
-                  <a
-                    href="#"
-                    className="text-[#1F2937] dark:text-[#E1E1FF] font-medium underline hover:text-[#4731D3] dark:hover:text-[#B7AAFF]"
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, tagIndex) => (
+                  <span
+                    key={tagIndex}
+                    className="rounded border border-[#3730A3] px-4 py-1 text-xs font-medium uppercase tracking-tight text-[#3730A3]"
                   >
-                    {project.links.github}
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[#1F2937] dark:text-[#E1E1FF] font-medium underline hover:text-[#4731D3] dark:hover:text-[#B7AAFF]"
-                  >
-                    {project.links.view}
-                  </a>
-                </div>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              <div className="flex items-center justify-between text-base font-medium text-[#3730A3]">
+                <a href="#" className="underline">
+                  {project.links.github}
+                </a>
+                <a href="#" className="underline">
+                  {project.links.view}
+                </a>
               </div>
             </div>
           ))}

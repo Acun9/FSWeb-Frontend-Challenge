@@ -30,55 +30,49 @@ const Hero = () => {
   };
 
   return (
-    <section className="py-12 md:py-20">
-      <div className="container mx-auto px-8 flex flex-col-reverse md:flex-row items-center gap-12">
-        {/* Left Content */}
-        <div className="flex-1 space-y-8">
-          <div className="flex items-center gap-4">
-            <div className="w-24 h-[1px] bg-[#4731D3] dark:bg-[#B7AAFF]"></div>
-            <span className="text-[#4731D3] dark:text-[#B7AAFF] font-medium">
+    <section className="py-24">
+      <div className="section-wrapper flex flex-col-reverse items-center gap-16 lg:flex-row lg:items-start">
+        <div className="flex-1 w-full space-y-8">
+          <div className="flex items-center gap-6 text-[#4338CA]">
+            <span className="block h-px w-24 bg-[#4338CA]"></span>
+            <span className="text-lg font-medium uppercase tracking-[0.4em]">
               {content.hero.name}
             </span>
           </div>
-
-          <h1 className="text-4xl md:text-6xl font-bold text-[#1F2937] dark:text-[#AEBCCF] leading-tight">
+          <h1 className="text-[48px] leading-[1.1] text-[#1F2937] font-bold sm:text-[60px] md:text-[72px]">
             {content.hero.title}
           </h1>
 
-          <p className="text-[#6B7280] dark:text-gray-400 text-lg leading-relaxed max-w-xl">
+          <p className="max-w-[553px] text-lg leading-7 text-[#6B7280]">
             {content.hero.description}
           </p>
 
-          <div className="flex flex-wrap gap-4 pt-4">
+          <div className="flex flex-wrap gap-3 pt-8">
             <button
               onClick={handleHireMe}
-              className="px-8 py-3 bg-[#4731D3] text-white rounded-md hover:bg-[#3726A6] transition-colors dark:bg-[#B7AAFF] dark:text-[#1F2937] dark:hover:bg-[#9e8eff]"
+              className="rounded-md bg-[#3730A3] px-8 py-3 text-lg font-medium text-white shadow-[0px_12px_30px_rgba(55,48,163,0.35)] transition-transform hover:-translate-y-0.5"
             >
               {content.hero.hireButton}
             </button>
-            <button className="px-8 py-3 border border-[#4731D3] text-[#4731D3] rounded-md flex items-center gap-2 hover:bg-[#EEF2FF] transition-colors dark:border-white dark:text-white dark:hover:bg-[#2A2A2A]">
-              <i className="fa-brands fa-github"></i>{" "}
+            <button className="flex items-center gap-3 rounded-md border border-[#3730A3] bg-white px-5 py-3 text-lg font-medium text-[#3730A3] transition-colors hover:bg-[#F4F2FF]">
+              <i className="fa-brands fa-github"></i>
               {content.hero.githubButton}
             </button>
-            <button className="px-8 py-3 border border-[#4731D3] text-[#4731D3] rounded-md flex items-center gap-2 hover:bg-[#EEF2FF] transition-colors dark:border-white dark:text-white dark:hover:bg-[#2A2A2A]">
-              <i className="fa-brands fa-linkedin-in"></i>{" "}
+            <button className="flex items-center gap-3 rounded-md border border-[#3730A3] bg-white px-5 py-3 text-lg font-medium text-[#3730A3] transition-colors hover:bg-[#F4F2FF]">
+              <i className="fa-brands fa-linkedin-in"></i>
               {content.hero.linkedinButton}
             </button>
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="flex-1 relative">
-          <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+        <div className="flex-1 w-full max-w-[476px]">
+          <div className="relative h-[375px] overflow-hidden rounded-[18px] shadow-[0px_8px_28px_-6px_rgba(24,39,75,0.12),0px_18px_88px_-4px_rgba(24,39,75,0.14)]">
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80"
-              alt="Hero"
-              className="w-full h-full object-cover aspect-[4/3]"
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+              alt="Almila working"
+              className="h-full w-full object-cover"
             />
           </div>
-          {/* Decorative elements */}
-          <div className="absolute -top-4 -right-4 w-full h-full border-2 border-[#4731D3] rounded-2xl -z-0 hidden md:block dark:border-[#B7AAFF]"></div>
-          <div className="absolute -bottom-4 -left-4 w-full h-full bg-[#4731D3] rounded-2xl -z-10 hidden md:block opacity-20 dark:bg-[#B7AAFF]"></div>
         </div>
       </div>
     </section>

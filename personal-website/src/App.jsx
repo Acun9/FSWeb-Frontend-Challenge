@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-[#252128] transition-colors duration-300">
+    <div className="min-h-screen bg-white text-[#5F6B7B] transition-colors duration-300">
       <Header />
       <main>
         <Hero />
