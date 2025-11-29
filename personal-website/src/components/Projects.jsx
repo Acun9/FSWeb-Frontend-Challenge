@@ -1,16 +1,15 @@
 import { useLanguage } from "../context/LanguageContext";
+import projectWorkintech from "../assets/projects-workintech.png";
+import projectRandomJokes from "../assets/projects-random-jokes.png";
+import projectJourney from "../assets/projects-journey.png";
 
 const Projects = () => {
   const { content } = useLanguage();
 
-  // Placeholder images mapping
   const projectImages = {
-    workintech:
-      "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1772&q=80",
-    "random-jokes":
-      "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80",
-    journey:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80",
+    workintech: projectWorkintech,
+    "random-jokes": projectRandomJokes,
+    journey: projectJourney,
   };
 
   return (
@@ -23,7 +22,7 @@ const Projects = () => {
           <div className="mt-4 h-px w-full bg-[#BAB2E7]"></div>
         </div>
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-[120px]">
+        <div className="grid gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-[120px]">
           {content.projects.items.map((project, index) => (
             <div key={index} className="max-w-[300px] space-y-4">
               <div className="h-[180px] w-full overflow-hidden rounded-lg">

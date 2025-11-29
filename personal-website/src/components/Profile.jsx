@@ -18,16 +18,16 @@ const Profile = () => {
             <h3 className="text-[30px] font-medium leading-7 text-[#4338CA]">
               {content.profile.basicInfoTitle}
             </h3>
-            <div className="space-y-4 text-[18px] leading-9 text-[#111827]">
+            <div className="space-y-4 text-[18px] leading-9 text-[#000000]">
               {Object.entries(content.profile.basicInfo).map(([key, info]) => (
                 <div
                   key={key}
                   className="flex flex-col gap-1 md:flex-row md:gap-6"
                 >
-                  <span className="w-full text-[18px] font-semibold tracking-[0.01em] text-[#111827] md:w-44">
+                  <span className="w-full text-[18px] font-semibold tracking-[0.01em] text-[#000000] md:w-44">
                     {info.label}
                   </span>
-                  <span className="text-[18px] tracking-[0.01em] text-[#111827]">
+                  <span className="text-[18px] tracking-[0.01em] text-[#000000]">
                     {info.value}
                   </span>
                 </div>

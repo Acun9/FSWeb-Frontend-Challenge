@@ -13,7 +13,7 @@ const Skills = () => {
           <div className="mt-4 h-px w-full bg-[#BAB2E7]"></div>
         </div>
 
-        <div className="grid gap-12 md:grid-cols-3 md:gap-x-20">
+        <div className="grid gap-y-12 md:grid-cols-3 md:gap-[120px]">
           {content.skills.items.map((skill, index) => (
             <div key={index} className="max-w-[300px] space-y-4">
               <h3 className="text-[30px] font-medium leading-7 text-[#4338CA]">

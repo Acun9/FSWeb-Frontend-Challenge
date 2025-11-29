@@ -4,12 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#4731d3",
+        primary: "#4338ca" /* indigo-700 from styleguide */,
+        primaryHover: "#3730a3" /* indigo-800 from styleguide */,
         secondary: "#ea2678",
         success: "#00ab6b",
         dark: "#1a1a1a",
-        slate: {
-          700: "#5f6b7b",
+        gray: {
+          500: "#6b7280",
+          800: "#1f2937",
         },
       },
     },

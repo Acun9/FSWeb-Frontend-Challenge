@@ -1,6 +1,9 @@
 import { useLanguage } from "../context/LanguageContext";
 import axios from "axios";
 import { toast } from "react-toastify";
+import heroImage from "../assets/hero-image-figma.png";
+import githubIcon from "../assets/github.svg";
+import linkedinIcon from "../assets/linked-in.svg";
 
 const Hero = () => {
   const { content } = useLanguage();
@@ -55,11 +58,11 @@ const Hero = () => {
               {content.hero.hireButton}
             </button>
             <button className="flex items-center gap-3 rounded-md border border-[#3730A3] bg-white px-5 py-3 text-lg font-medium text-[#3730A3] transition-colors hover:bg-[#F4F2FF]">
-              <i className="fa-brands fa-github"></i>
+              <img src={githubIcon} alt="Github" className="h-6 w-6" />
               {content.hero.githubButton}
             </button>
             <button className="flex items-center gap-3 rounded-md border border-[#3730A3] bg-white px-5 py-3 text-lg font-medium text-[#3730A3] transition-colors hover:bg-[#F4F2FF]">
-              <i className="fa-brands fa-linkedin-in"></i>
+              <img src={linkedinIcon} alt="Linkedin" className="h-6 w-6" />
               {content.hero.linkedinButton}
             </button>
           </div>
@@ -68,7 +71,7 @@ const Hero = () => {
         <div className="flex-1 w-full max-w-[476px]">
           <div className="relative h-[375px] overflow-hidden rounded-[18px] shadow-[0px_8px_28px_-6px_rgba(24,39,75,0.12),0px_18px_88px_-4px_rgba(24,39,75,0.14)]">
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80"
+              src={heroImage}
               alt="Almila working"
               className="h-full w-full object-cover"
             />

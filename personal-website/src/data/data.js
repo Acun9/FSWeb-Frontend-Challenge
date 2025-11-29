@@ -8,7 +8,7 @@ export const data = {
       lightMode: "AYDINLIK MOD",
     },
     hero: {
-      name: "Almila Su",
+      name: "Murat Acun",
       title: "Yaratıcı düşünür Minimalist sever",
       description:
         "Merhaba, ben Almila. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven bir full-stack geliştiriciyim. Tanışalım.",
@@ -85,7 +85,7 @@ export const data = {
     },
     footer: {
       msg: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
-      email: "almilasucode@gmail.com",
+      email: "m.muratacun9@gmail.com",
       links: ["Personal Blog", "Github", "Linkedin"],
     },
   },
@@ -98,7 +98,7 @@ export const data = {
       lightMode: "LIGHT MODE",
     },
     hero: {
-      name: "Almila Su",
+      name: "Murat Acun",
       title: "Creative thinker Minimalism lover",
       description:
         "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
@@ -175,7 +175,7 @@ export const data = {
     },
     footer: {
       msg: "Let’s work together on your next product.",
-      email: "almilasucode@gmail.com",
+      email: "m.muratacun9@gmail.com",
       links: ["Personal Blog", "Github", "Linkedin"],
     },
   },

@@ -10,10 +10,10 @@ const Header = () => {
       <div className="section-wrapper flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center gap-4">
           <div className="h-[62px] w-[63px] rounded-full bg-[#EEEBFF] flex items-center justify-center rotate-12 shadow-[0px_18px_45px_rgba(71,49,211,0.25)]">
-            <span className="text-primary text-2xl font-semibold">A</span>
+            <span className="text-[#7B61FF] text-2xl font-semibold">M</span>
           </div>
           <div>
-            <p className="text-[11px] tracking-[0.4em] uppercase text-[#9CA3AF]">
+            <p className="text-[11px] tracking-[0.4em] uppercase text-[#4338CA]">
               {content.hero.name}
             </p>
             <p className="text-2xl font-semibold text-[#1F2937]">Portfolio</p>
@@ -45,21 +45,34 @@ const Header = () => {
               </button>
               <span className="hidden md:block">|</span>
             </div>
-            <button onClick={toggleLanguage} className="text-primary">
-              {language === "en" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO EN"}
+            <button
+              onClick={toggleLanguage}
+              className="font-bold tracking-widest"
+            >
+              {language === "en" ? (
+                <>
+                  <span className="text-[#4731D3]">TÜRKÇE</span>
+                  <span className="text-[#777777]">'YE GEÇ</span>
+                </>
+              ) : (
+                <>
+                  <span className="text-[#4731D3]">SWITCH</span>
+                  <span className="text-[#777777]"> TO EN</span>
+                </>
+              )}
             </button>
           </div>
 
-          <nav className="flex flex-wrap items-center justify-center gap-6 text-lg font-medium text-[#6B7280]">
+          <nav className="flex flex-wrap items-center justify-center text-lg font-medium text-[#6B7280]">
             <a
               href="#skills"
-              className="transition-colors hover:text-[#1F2937]"
+              className="mr-[82px] transition-colors hover:text-[#1F2937]"
             >
               {content.header.skills}
             </a>
             <a
               href="#projects"
-              className="transition-colors hover:text-[#1F2937]"
+              className="mr-[60px] transition-colors hover:text-[#1F2937]"
             >
               {content.header.projects}
             </a>
