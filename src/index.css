@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
+@config "../tailwind.config.js";
 
 :root {
   --defaultgray-500: #6b7280;
@@ -11,15 +12,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  color: var(--defaultgray-500);
-  background-color: var(--defaultwhite);
-  transition: color 0.3s ease, background-color 0.3s ease;
   -webkit-font-smoothing: antialiased;
-}
-
-.dark body {
-  color: #f7f7f7;
-  background-color: #151515;
 }
 
 h1,
@@ -30,6 +23,16 @@ h5,
 h6 {
   color: #0f172a;
   font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #e2e2e2;
 }
 
 .section-wrapper {

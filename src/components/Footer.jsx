@@ -4,13 +4,13 @@ const Footer = () => {
   const { content } = useLanguage();
 
   return (
-    <footer id="hire-me" className="bg-[#F9F9F9] py-24">
+    <footer id="hire-me" className="bg-[#F9F9F9] py-24 dark:bg-[#1A1A1A]">
       <div className="section-wrapper flex flex-col gap-10 text-left lg:flex-row lg:items-center lg:justify-between">
         <div className="space-y-6">
-          <h2 className="max-w-2xl text-[42px] font-semibold leading-tight text-[#1F2937]">
+          <h2 className="max-w-2xl text-[42px] font-semibold leading-tight text-[#1F2937] dark:text-[#E2E2E2]">
             {content.footer.msg}
           </h2>
-          <div className="flex items-center gap-2 text-[#AF0C48]">
+          <div className="flex items-center gap-2 text-[#AF0C48] dark:text-[#E2E2E2]">
             <span className="text-2xl leading-6">👉</span>
             <a
               href={`mailto:${content.footer.email}`}
@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="flex flex-wrap gap-5 text-[18px] font-medium">
           {content.footer.links.map((link, index) => {
             const colors = [
-              "text-[#0A0A14]",
+              "text-[#0A0A14] dark:text-[#E2E2E2]",
               "text-[#00AB6B]",
               "text-[#0077B5]",
             ];

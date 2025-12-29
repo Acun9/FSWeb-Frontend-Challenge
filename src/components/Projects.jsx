@@ -16,10 +16,10 @@ const Projects = () => {
     <section id="projects" className="py-24">
       <div className="section-wrapper space-y-10">
         <div>
-          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937]">
+          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937] dark:text-[#E2E2E2]">
             {content.projects.title}
           </h2>
-          <div className="mt-4 h-px w-full bg-[#BAB2E7]"></div>
+          <div className="mt-4 h-px w-full bg-[#BAB2E7] dark:bg-[#3A3A3A]"></div>
         </div>
 
         <div className="grid gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-[120px]">
@@ -33,10 +33,10 @@ const Projects = () => {
                 />
               </div>
 
-              <h3 className="text-[30px] font-medium leading-7 text-[#4338CA]">
+              <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#B7AAFF]">
                 {project.title}
               </h3>
-              <p className="text-sm leading-tight text-[#6B7280]">
+              <p className="text-sm leading-tight text-[#6B7280] dark:text-[#AAAAAA]">
                 {project.description}
               </p>
 
@@ -44,14 +44,14 @@ const Projects = () => {
                 {project.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="rounded border border-[#3730A3] px-4 py-1 text-xs font-medium uppercase tracking-tight text-[#3730A3]"
+                    className="rounded border border-[#3730A3] px-4 py-1 text-xs font-medium uppercase tracking-tight text-[#3730A3] dark:border-[#8F88FF] dark:text-[#8F88FF]"
                   >
                     {tag}
                   </span>
                 ))}
               </div>
 
-              <div className="flex items-center justify-between text-base font-medium text-[#3730A3]">
+              <div className="flex items-center justify-between text-base font-medium text-[#3730A3] dark:text-[#E2E2E2]">
                 <a href="#" className="underline">
                   {project.links.github}
                 </a>

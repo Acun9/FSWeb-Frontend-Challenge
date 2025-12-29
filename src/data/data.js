@@ -11,7 +11,7 @@ export const data = {
       name: "Murat Acun",
       title: "Yaratıcı düşünür Minimalist sever",
       description:
-        "Merhaba, ben Almila. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven bir full-stack geliştiriciyim. Tanışalım.",
+        "Merhaba, ben Murat. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri oluşturmayı seven bir full-stack geliştiriciyim. Tanışalım.",
       hireButton: "Beni İşe Al",
       githubButton: "Github",
       linkedinButton: "Linkedin",
@@ -101,7 +101,7 @@ export const data = {
       name: "Murat Acun",
       title: "Creative thinker Minimalism lover",
       description:
-        "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
+        "Hi, I'm Murat. I'm a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let's shake hands with me.",
       hireButton: "Hire me",
       githubButton: "Github",
       linkedinButton: "Linkedin",
