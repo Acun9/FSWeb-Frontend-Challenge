@@ -7,15 +7,15 @@ const Profile = () => {
     <section className="py-24">
       <div className="section-wrapper space-y-10">
         <div>
-          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937] dark:text-[#E2E2E2]">
+          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937] dark:text-[#B7AAFF]">
             {content.profile.title}
           </h2>
-          <div className="mt-4 h-px w-full bg-[#BAB2E7] dark:bg-[#3A3A3A]"></div>
+          <div className="mt-4 h-px w-full bg-[#BAB2E7] dark:bg-[#B7AAFF]"></div>
         </div>
 
         <div className="grid gap-12 md:grid-cols-[420px_minmax(0,1fr)]">
           <div className="space-y-6">
-            <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#B7AAFF]">
+            <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#E2E2E2]">
               {content.profile.basicInfoTitle}
             </h3>
             <div className="space-y-4 text-[18px] leading-9 text-[#000000] dark:text-[#E2E2E2]">
@@ -36,7 +36,7 @@ const Profile = () => {
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#B7AAFF]">
+            <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#E2E2E2]">
               {content.profile.aboutMeTitle}
             </h3>
             <div className="space-y-4 text-[18px] leading-[27px] text-[#6B7280] dark:text-[#AAAAAA]">

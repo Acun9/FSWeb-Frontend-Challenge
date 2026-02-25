@@ -21,18 +21,8 @@ h3,
 h4,
 h5,
 h6 {
-  color: #0f172a;
   font-weight: 700;
   transition: color 0.3s ease;
-}
-
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6 {
-  color: #e2e2e2;
 }
 
 .section-wrapper {

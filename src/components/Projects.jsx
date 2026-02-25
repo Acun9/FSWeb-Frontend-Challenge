@@ -16,10 +16,10 @@ const Projects = () => {
     <section id="projects" className="py-24">
       <div className="section-wrapper space-y-10">
         <div>
-          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937] dark:text-[#E2E2E2]">
+          <h2 className="text-[48px] font-semibold leading-none text-[#1F2937] dark:text-[#B7AAFF]">
             {content.projects.title}
           </h2>
-          <div className="mt-4 h-px w-full bg-[#BAB2E7] dark:bg-[#3A3A3A]"></div>
+          <div className="mt-4 h-px w-full bg-[#BAB2E7] dark:bg-[#B7AAFF]"></div>
         </div>
 
         <div className="grid gap-y-12 md:grid-cols-2 lg:grid-cols-3 lg:gap-[120px]">
@@ -33,7 +33,7 @@ const Projects = () => {
                 />
               </div>
 
-              <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#B7AAFF]">
+              <h3 className="text-[30px] font-medium leading-7 text-[#4338CA] dark:text-[#E2E2E2]">
                 {project.title}
               </h3>
               <p className="text-sm leading-tight text-[#6B7280] dark:text-[#AAAAAA]">

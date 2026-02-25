@@ -34,16 +34,16 @@ const Header = () => {
               </span>
               <button
                 onClick={toggleTheme}
-                className={`relative inline-flex h-6 w-14 items-center rounded-full transition-all duration-300 ${
+                className={`relative inline-flex h-6 w-12 items-center rounded-full transition-all duration-300 ${
                   theme === "dark" ? "bg-[#3A3A3A]" : "bg-[#4731D3]"
                 }`}
                 aria-label="Toggle theme"
               >
                 <span
-                  className={`absolute left-1 h-[18px] w-[18px] rounded-full transition-transform duration-300 ${
+                  className={`absolute h-[18px] w-[18px] rounded-full transition-transform duration-300 ${
                     theme === "dark"
-                      ? "translate-x-6 bg-[#FFE86E]"
-                      : "translate-x-0 bg-white"
+                      ? "translate-x-[27px] bg-[#E2E2E2]"
+                      : "translate-x-[3px] bg-white"
                   }`}
                 ></span>
               </button>
@@ -91,7 +91,7 @@ const Header = () => {
             </a>
             <a
               href="#hire-me"
-              className="rounded-md border border-[#3730A3] px-8 py-3 text-[#3730A3] transition-colors hover:bg-[#F4F2FF] dark:border-[#E2E2E2] dark:text-[#E2E2E2] dark:hover:bg-[#3A3A3A]"
+              className="transition-colors hover:text-[#1F2937] dark:hover:text-white"
             >
               {content.header.hireMe}
             </a>

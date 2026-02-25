@@ -3,7 +3,7 @@ export const data = {
     header: {
       skills: "Yetenekler",
       projects: "Projeler",
-      hireMe: "Beni İşe Al",
+      hireMe: "İletişim",
       darkMode: "KARANLIK MOD",
       lightMode: "AYDINLIK MOD",
     },
@@ -86,14 +86,14 @@ export const data = {
     footer: {
       msg: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
       email: "m.muratacun9@gmail.com",
-      links: ["Personal Blog", "Github", "Linkedin"],
+      links: ["Github", "Linkedin"],
     },
   },
   en: {
     header: {
       skills: "Skills",
       projects: "Projects",
-      hireMe: "Hire me",
+      hireMe: "Contact",
       darkMode: "DARK MODE",
       lightMode: "LIGHT MODE",
     },
@@ -176,7 +176,7 @@ export const data = {
     footer: {
       msg: "Let’s work together on your next product.",
       email: "m.muratacun9@gmail.com",
-      links: ["Personal Blog", "Github", "Linkedin"],
+      links: ["Github", "Linkedin"],
     },
   },
 };

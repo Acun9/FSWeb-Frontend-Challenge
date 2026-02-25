@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,16 +9,25 @@
     />
     <meta
       name="keywords"
-      content="Murat Acun, Frontend Developer, React, JavaScript, Portfolio, Web Developer"
+      content="Murat Acun, Software Developer, React, JavaScript, Portfolio, Web Developer"
     />
     <meta name="author" content="Murat Acun" />
-    <meta property="og:title" content="Murat Acun | Frontend Developer" />
+    <meta property="og:title" content="Murat Acun | Software Developer" />
     <meta
       property="og:description"
-      content="Frontend Developer Portfolio - React, JavaScript, Node.js"
+      content="Software Developer Portfolio - React, JavaScript, Node.js"
     />
     <meta property="og:type" content="website" />
-    <title>Murat Acun | Frontend Developer</title>
+    <title>Murat Acun | Software Developer</title>
+    <script>
+      // Prevent flash of light mode
+      const theme = localStorage.getItem("theme") || "dark";
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

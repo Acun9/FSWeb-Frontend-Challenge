@@ -23,15 +23,17 @@ const Footer = () => {
 
         <div className="flex flex-wrap gap-5 text-[18px] font-medium">
           {content.footer.links.map((link, index) => {
-            const colors = [
-              "text-[#0A0A14] dark:text-[#E2E2E2]",
-              "text-[#00AB6B]",
-              "text-[#0077B5]",
+            const colors = ["text-[#00AB6B]", "text-[#0077B5]"];
+            const urls = [
+              "https://github.com/Acun9",
+              "https://www.linkedin.com/in/acun9/",
             ];
             return (
               <a
                 key={index}
-                href="#"
+                href={urls[index]}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={colors[index] || "text-[#0A0A14]"}
               >
                 {link}
