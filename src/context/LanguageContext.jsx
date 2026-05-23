@@ -1,32 +1,34 @@
-import { createContext, useContext, useState, useEffect } from "react";
-import { data } from "../data/data";
-import axios from "axios";
+import { useCallback, useMemo } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
+import useFetchContent from "../hooks/useFetchContent";
+import { LanguageContext } from "./languageContextValue";
 
-const LanguageContext = createContext();
+const getInitialLanguage = () => {
+  if (typeof window === "undefined") return "en";
+  const stored = window.localStorage.getItem("language");
+  if (stored === "tr" || stored === "en") return stored;
+  return navigator.language?.toLowerCase().startsWith("tr") ? "tr" : "en";
+};
 
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "en"
+  const [language, setLanguage] = useLocalStorage(
+    "language",
+    getInitialLanguage
   );
-  const [content, setContent] = useState(data[language]);
+  const { content, isLoading } = useFetchContent(language);
 
-  useEffect(() => {
-    localStorage.setItem("language", language);
-    setContent(data[language]);
-
-    // Optional: Send language preference to API if needed
-    // axios.post('https://reqres.in/api/workintech', { language });
-  }, [language]);
-
-  const toggleLanguage = () => {
+  const toggleLanguage = useCallback(() => {
     setLanguage((prev) => (prev === "en" ? "tr" : "en"));
-  };
+  }, [setLanguage]);
+
+  const value = useMemo(
+    () => ({ language, toggleLanguage, content, isLoading }),
+    [language, toggleLanguage, content, isLoading]
+  );
 
   return (
-    <LanguageContext.Provider value={{ language, toggleLanguage, content }}>
+    <LanguageContext.Provider value={value}>
       {children}
     </LanguageContext.Provider>
   );
 };
-
-export const useLanguage = () => useContext(LanguageContext);

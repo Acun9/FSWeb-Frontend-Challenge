@@ -8,11 +8,28 @@
   --defaultindigo-700: #4338ca;
   --defaultindigo-800: #3730a3;
   --defaultwhite: #ffffff;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 body {
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -23,6 +40,10 @@ h5,
 h6 {
   font-weight: 700;
   transition: color 0.3s ease;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .section-wrapper {
